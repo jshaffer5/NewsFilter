@@ -26,6 +26,15 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
     <link rel="stylesheet" href="css/style.css">
     
 </head>
+<script type="text/javascript">
+    window.onload = function() {
+        var eSelect = document.getElementById('country');
+        
+        eSelect.onchange = function() {
+            window.location.assign("http://newsfilters.herokuapp.com/?country=" + this.value);
+        }
+    }
+  </script>
 <body>
 
 <div class="container">
@@ -43,7 +52,7 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
         
     </div>
 
-    <select><option value="co">Colombia</option><option value="br">Brasil</option></select>
+    <select id="country" onchange=""><option value="co">Colombia</option><option value="br">Brasil</option></select>
 
 </div>
 
