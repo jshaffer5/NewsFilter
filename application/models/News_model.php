@@ -14,7 +14,7 @@ class News_model extends CI_Model {
         }
 
         private function get_url($url = FALSE) { // API KEY: 597116e2bbea465fa794a86c3d6708bc
-            $response = file_get_contents('https://newsapi.org/v2/top-headlines?country=co&apiKey=597116e2bbea465fa794a86c3d6708bc'); // country=co (Colombia)
+            $response = file_get_contents('https://newsapi.org/v2/top-headlines?country=br&apiKey=597116e2bbea465fa794a86c3d6708bc'); // country=br (Brazil), co (Colombia)
             // log_message('debug', $response);
             $articles = $this->format_response($response);
             return $articles;
