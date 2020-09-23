@@ -40,8 +40,6 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
         if (urlParams.has("country")) {
             eSelect.value = urlParams.get("country");
         }
-
-
     }
   </script>
 <body>
