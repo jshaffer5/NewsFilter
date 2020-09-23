@@ -33,6 +33,15 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
         eSelect.onchange = function() {
             window.location.assign("http://newsfilters.herokuapp.com/?country=" + this.value);
         }
+
+        // if url has country specified, update the value of <select>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        if (urlParams.has("country")) {
+            eSelect.value = urlParams.get("country");
+        }
+
+
     }
   </script>
 <body>
