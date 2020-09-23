@@ -43,6 +43,8 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
         
     </div>
 
+    <select><option value="co">Colombia</option><option value="br">Brasil</option></select>
+
 </div>
 
 <div class="main">
