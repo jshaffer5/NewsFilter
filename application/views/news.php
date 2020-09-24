@@ -8,11 +8,11 @@ $logged_in = TRUE;
 if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
     // header('location:login');
     $logged_in = FALSE;
-    echo "NO USER SESSION";
+    // echo "NO USER SESSION";
     
 }
 //BYPASSING LOGIN FOR DEVELOPMENT
-// echo "<a>{$_SESSION['user']} {$logged_in}</a>";
+echo "<a>{$_SESSION['user']} {$logged_in}</a>";
 
 ?>
 
@@ -59,7 +59,13 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
         
     </div>
 
-    <select id="country" onchange=""><option value="co">Colombia</option><option value="br">Brasil</option></select>
+    <label for="country">Choose a country:</label>
+    <select name="country" id="country">
+        <option value="co">Colombia</option>
+        <option value="br">Brasil</option>
+        <option value="fr">France</option>
+        <option value="br">USA</option>
+    </select>
 
 </div>
 
