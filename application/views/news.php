@@ -47,7 +47,7 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
 <div class="container">
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h2 class="my-0 mr-md-auto font-weight-normal" style="color:#3a91b6;">NewsFilter</h2>
+        <h2 class="my-0 mr-md-auto font-weight-normal" style="color:#3a91b6;">Latest News</h2>
         <nav class="my-2 my-md-0 mr-md-3">
         <a class="btn btn-sm btn-primary" onclick="window.location.reload()" href="#">Refresh Page</a>
         </nav>
