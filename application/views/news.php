@@ -12,7 +12,7 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
     
 }
 //BYPASSING LOGIN FOR DEVELOPMENT
-echo "<a>{$_SESSION['user']} {$logged_in}</a>";
+// echo "<a>{$_SESSION['user']} {$logged_in}</a>";
 
 ?>
 
@@ -31,7 +31,7 @@ echo "<a>{$_SESSION['user']} {$logged_in}</a>";
         var eSelect = document.getElementById('country');
         
         eSelect.onchange = function() {
-            window.location.assign("http://newsfilters.herokuapp.com/?country=" + this.value);
+            window.location.assign("http://mainstories.herokuapp.com/?country=" + this.value);
         }
 
         // if url has country specified, update the value of <select>
