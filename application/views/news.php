@@ -64,7 +64,7 @@ if(!isset($_SESSION['user'])||(trim ($_SESSION['user']) == '')){
         <option value="co">Colombia</option>
         <option value="br">Brasil</option>
         <option value="fr">France</option>
-        <option value="br">USA</option>
+        <option value="us">USA</option>
     </select>
 
 </div>
